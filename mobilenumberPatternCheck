@@ -1,0 +1,11 @@
+import java.util.regex.*;
+public class regex 
+{
+   public static void main(String[] args)
+   {
+	  String s="+919789787630";
+	  Pattern p=Pattern.compile("[+]{1}[9&1]{2}[6789]{1}[0-9]{9}");
+	  Matcher m=p.matcher(s);
+	  System.out.println(m.find());
+   }
+}
